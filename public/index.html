@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="jobPortal">
+   <head>
+      <charset="UTF-8"> 
+      <link rel="stylesheet" type="text/css" href="/stylesheets/index.css">
+      <link rel="stylesheet" href="/stylesheets/style.css" type="text/css">
+      <link rel="shortcut icon" type="image/png" href="/images/logo.png">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+      <title>Job Finder</title>
+   </head>
+   <body class="{{bodylayout}}">
+      <div ng-view></div>
+      <script type="text/javascript" src="/javascripts/index.js"></script>
+      <script src="../lib/angular.min.js"></script>
+      <script src="../lib/angular-route.min.js"></script>
+      <script src="../lib/angular-cookies.js"></script>
+      <script src="../lib/ui-bootstrap-0.12.0.min.js"></script>
+      <script src="/app.js"></script>
+      <script src="js/controller.min.js"></script>
+      <script src="js/service.min.js"></script>
+      <script src="directive/directive.js"></script>
+   </body>
+</html>

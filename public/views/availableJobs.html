@@ -1,0 +1,32 @@
+<div class="jobeader">
+   <div class="clearfix">
+      <a class="sign-up" href="#/login"> <label class="pointer">Login</label> </a>
+      <a class="sign-up" href="#/admin"> <label class="pointer">Admin</label> </a>
+      <div class="innerLogo">
+         <a href="#/"> <img class="innerLogo" src="/images/logo.png" class="logo" height="100" width="250"> </a>
+      </div>
+   </div>
+</div>
+<div class="table-title">
+   <h3>Available Jobs</h3>
+</div>
+<table class="table-fill">
+   <thead>
+      <tr>
+         <th class="text-left">Job</th>
+         <th class="text-left">Place</th>
+         <th class="text-left">Responsibilities</th>
+         <th class="text-left">Bond</th>
+         <th class="text-left">Salary</th>
+      </tr>
+   </thead>
+   <tbody class="table-hover">
+      <tr ng-repeat="p in jobInfo.post track by $index">
+         <td class="text-left">{{jobInfo.post[$index]}}</td>
+         <td class="text-left">{{jobInfo.company[$index]}}</td>
+         <td class="text-left">{{jobInfo.responsibilities[$index]}}</td>
+         <td class="text-left">{{jobInfo.bond[$index]}}</td>
+         <td class="text-left">{{jobInfo.salary[$index]}}</td>
+      </tr>
+   </tbody>
+</table>

@@ -1,0 +1,50 @@
+<div class="header">
+  <div class="clearfix">
+    <div class="innerLogo">
+      <a href="#/"> <img src="/images/logo.png" alt="LOGO" height="100" width="250"> </a>
+    </div>
+    <ul class="navigation">
+      <li> <a ng-href="#/admin">Admin</a> </li>
+      <li class="active"> <a href="#/login">Logout</a> </li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+  <div class="clearfix">
+    <h1>Candidates List</h1>
+    <table class="table-fill">
+      <thead>
+        <tr>
+          <th class="text-left">Name</th>
+          <th class="text-left">Mobile No</th>
+          <th class="text-left">Location</th>
+          <th class="text-left">Privilage</th>
+          <th class="text-left">Work Experience</th>
+          <th class="text-left">Gender</th>
+          <th class="text-left">Resume</th>
+        </tr>
+      </thead>
+      <tbody class="table-hover">
+        <tr ng-repeat="p in candidatesData.name track by $index">
+          <td class="text-left">{{candidatesData.name[$index]}}</td>
+          <td class="text-left">{{candidatesData.phno[$index]}}</td>
+          <td class="text-left">{{candidatesData.location[$index]}}</td>
+          <td class="text-left">{{candidatesData.privilage[$index]}}</td>
+          <td class="text-left">{{candidatesData.experience[$index]}}</td>
+          <td class="text-left">{{candidatesData.gender[$index]}}</td>
+          <td class="text-left">{{candidatesData.resume[$index]}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<div class="footer">
+  <div class="clearfix">
+    <div class="section contact">
+      <h4>Contact Us</h4>
+      <p> <span>Address:</span> Qburst Technologies pvt.ltd </p>
+      <p> <span>Phone:</span> (+91) 9744296904 </p>
+      <p> <span>Email:</span> krishnadev@qburst.com </p>
+    </div>
+  </div>
+</div>

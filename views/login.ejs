@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <charset="UTF-8"> 
+    <link rel="stylesheet" type="text/css" href="/stylesheets/index.css">
+    <link rel="shortcut icon" type="/image/png" href="images/logo.png">
+    <script type="text/javascript" src="/javascripts/index.js"></script>
+    <title>Job Finder</title>
+  </head>
+  <body style="background: url('/images/bg3.jpg') no-repeat fixed;background-size: cover;">
+    <div>
+      <div>
+        <a href="/">
+          <img class="logo" src="/images/logo.png">
+        </a>
+      </div>
+      <form name="loginForm" action="/login" method="post">
+        <div class="login-container sign-login-container">
+          <div>
+            <a class="txt-coloring sign-up" href="signUp">
+            <label class="pointer">Sign Up</label>
+            </a>
+            <a class="txt-coloring home" href="/">
+            <label class="pointer">Home</label>
+            </a>
+            <div class="txt-coloring label">
+              <label>Welcome Back</label>
+            </div>
+            <div>
+              <input id="email" class="txtfield-size" type="text" name="email" placeholder="Email"/>
+            </div>
+            <div class="login-notificationbox" id="email-result-popup"><%= emailError %></div>
+            <div>
+              <input id="password" class="txtfield-size" type="password" name="password" placeholder="Password"/>
+            </div>
+            <div class="login-notificationbox " id="passwd-result-popup"><%= passwordError %></div>
+            <div>
+              <input id="box" class="background-coloring box" type="checkbox" name="box"/>         
+              <label for="box" class="txt-coloring">Remember me</label>
+              <a class="txt-coloring forgot-passwd" href="#">
+              <span>Forgot password?</span>
+              </a>
+            </div>
+            <div>
+              <input class="button login-position" type="submit" onclick="validateEmail()" value="Login"/>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

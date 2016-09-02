@@ -1,0 +1,78 @@
+<div class="header">
+  <div class="clearfix">
+    <div class="innerLogo">
+      <a href="#/">
+      <img src="/images/logo.png" alt="LOGO" height="100" width="250">
+      </a>
+    </div>
+    <ul class="navigation">
+      <li>
+        <a ng-href="#/view-profile">Profile</a>
+      </li>
+      <li class="active">
+        <a href="#/login">{{companyDetails.link}}</a>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+  <div class="clearfix">
+    <h1>Register Here</h1>
+    <div class="frame2">
+      <div class="box">
+        <img src="/images/bg2.jpg" alt="Img" height="298" width="924">
+      </div>
+    </div>
+    <form class="reg-container" method="post">
+      <input name="email" id="email" type="hidden" value="{{email}}" ng-model="companyDetails.email"/>
+      <input name="id" id="id" type="hidden" value="{{id}}" ng-model="companyDetails.id"/>
+      <div class="responseMsg"><label>{{companyDetails.congratsMsg}}</label><label>{{companyDetails.failureMsg}}</label>
+      </div>
+      <div class="div-positioning reg-frm-top color" name="companyDetails">
+        <div class="color">
+          <h2>{{companyDetails.post}}</h2>
+        </div>
+        <h3>
+          Company
+          <h1>{{companyDetails.company}}</h1>
+        </h3>
+        <h3>
+          Responsibilities
+        </h3>
+        <p>{{companyDetails.responsibilities}}</p>
+        <h3>
+          Bond
+        </h3>
+        <p>{{companyDetails.bond}}</p>
+        <h3>
+          Salary
+        </h3>
+        <p>{{companyDetails.salary}}</p>
+      </div>
+      <div class="register">
+        <input id="visible" class="button register-position" name="register" type="button" 
+        ng-click="register(1)" value="Register"/>
+      </div>
+      <div class="unregister">
+        <input id="visible" class="button unregister-position" name="unregister" type="button" ng-click="register(0)" value="Unregister"/>
+      </div>
+  </div>
+  </form>
+</div>
+</div>
+<div class="footer">
+  <div class="clearfix">
+    <div class="section contact">
+      <h4>Contact Us</h4>
+      <p>
+        <span>Address:</span> Qburst Technologies pvt.ltd
+      </p>
+      <p>
+        <span>Phone:</span> (+91) 9744296904
+      </p>
+      <p>
+        <span>Email:</span> krishnadev@qburst.com
+      </p>
+    </div>
+  </div>
+</div>

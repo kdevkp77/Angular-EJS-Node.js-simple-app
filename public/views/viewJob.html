@@ -1,0 +1,33 @@
+<div>
+  <div>
+    <a href="#/">
+      <img class="logo" src="/images/logo.png"> 
+    </a>
+  </div>
+  <form name="addingJob" method="post">
+    <div class="login-container sign-login-container">
+      <div>
+      <a class="txt-coloring sign-up" href="#/login">
+      <label class="pointer">Login</label>
+      </a>
+      <a class="txt-coloring sign-up" href="#/admin">
+      <label class="pointer">Admin</label>
+      </a>
+        <div class="txt-coloring label">
+          <label>Edit Company</label>
+        </div>
+        <div>
+          <input id="company" class="txtfield-size" type="text" name="company" ng-init="company = ''" ng-model="company" placeholder="Company"/>
+        </div>
+        <div class="login-notificationbox" id="company-result-popup">{{companyErr}}</div>
+        <div>
+          <input id="password" class="txtfield-size" type="text" name="post" ng-init="post= ''" ng-model="post" placeholder="Post"/>
+        </div>
+        <div class="login-notificationbox " id="post-result-popup">{{postErr}}</div>
+        <div>
+          <input class="button login-position" type="submit" ng-click="showJob()" value="Find"/>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <charset="UTF-8"> 
+    <link rel="stylesheet" type="text/css" href="/stylesheets/index.css">
+    <link rel="shortcut icon" href="/images/logo.png">
+    <script type="text/javascript" src="/javascripts/index.js"></script>
+    <title>Job Finder</title>
+  </head>
+  <body style="background: url('/images/bg.jpg') no-repeat fixed;background-size: cover;">
+    <div class="logo-container">
+      <a href="/">
+        <img class="home-logo" src="/images/logo.png">
+      </a>
+    </div>
+    <form class="register-container" name="addingJob" action="/updateJob/<%= id%>" method="post">
+      <div class="sign-container sign-login-container">
+        <div class="inner-div-length">
+          <a class="txt-coloring sign-up" href="/login">
+          <label class="pointer">Logout</label>
+          </a> 
+          <a class="txt-coloring sign-up" href="/deleteJob/<%= id%>">
+          <label class="pointer">Delete Job</label>
+          </a>
+          <div class="txt-coloring label">
+            <label>Update Job</label>
+          </div>
+          <div class="div-positioning txtfield-frm-top">
+            <span class="txt-coloring span-frm-top">Company</span>
+            <input id="companyName" class="inputfield" type="text" value="<%= name%>" name="company"/>
+            <div class="txtfield-notification notification-txt-position" id="company-notification">
+            <%= companyError%>
+            </div>
+          </div>
+          <div class="div-positioning txtfield-frm-top">
+            <span class="txt-coloring span-frm-top">Post</span>
+            <input id="lastName" class="inputfield" type="text" value="<%= post%>" name="post"/>
+            <div class="txtfield-notification notification-txt-position" id="post-notification">
+            <%= postError%>
+            </div>
+          </div>
+          <div class="div-positioning txtfield-frm-top">
+            <span class="txt-coloring span-frm-top">Bond</span>
+            <input id="email" class="inputfield" type="text" value="<%= bond%>" name="bond"/>
+            <div class="txtfield-notification notification-txt-position" id="bond-notification" name="mail">
+            <%= bondError%>
+            </div>
+          </div>
+          <div class="div-positioning txtfield-frm-top">
+            <span class="txt-coloring span-frm-top">Salary</span>
+            <input id="password" class="inputfield" type="text" value="<%= salary%>" name="salary"/>
+            <div class="txtfield-notification notification-txt-position" id="salary-notification">
+            <%= salaryError%>
+            </div>
+          </div>
+          <div class="div-positioning txtfield-frm-top">
+            <span class="txt-coloring span-frm-top">Place</span>
+            <input id="confirm-password" class="inputfield" type="text" value="<%= place%>" name="place"/>
+            <div class="txtfield-notification notification-txt-position" id="place-notification">
+            <%= placeError%>
+            </div>
+          </div>
+          <div class="div-positioning txtfield-frm-top">
+            <span class="txt-coloring addressfield-position address-frm-top">Skills Required</span>
+            <textarea id="permanent-address" class="responsibilityfield" name="responsibilities" rows="20" cols="6"><%= skill%></textarea>
+            <div class="txtfield-notification" id="permanent-address-notification">
+            </div>
+          </div>
+          <div class="div-positioning txtfield-frm-top txtfield-frm-left">
+          <%= successMsg %>
+          </div>
+          <div>
+            <input class="button add-position" type="submit" onclick="validateJob()" value="Update"/>
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

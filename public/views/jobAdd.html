@@ -1,0 +1,75 @@
+<link rel="stylesheet" type="text/css" href="/stylesheets/index.css">
+    <div class="logo-container">
+      <a href="#/">
+        <img class="home-logo" src="/images/logo.png">
+      </a>
+    </div>
+    <form class="register-container" name="addingJob" method="post">
+      <div class="sign-container sign-login-container">
+        <div class="inner-div-length">
+          <a class="txt-coloring sign-up" href="#/login">
+          <label class="pointer">Login</label>
+          </a>
+          <a class="txt-coloring sign-up" href="#/admin">
+          <label class="pointer">Admin</label>
+          </a> 
+          <div class="txt-coloring label">
+            <label>Add Jobs</label>
+          </div>
+          <div class="div-positioning txtfield-frm-top">
+            <span class="txt-coloring span-frm-top">Id</span>
+            <input id="companyId" class="inputfield" type="text" name="id" ng-init="id = ''" ng-model="id" placeholder="you can choose any id"/>
+            <div class="txtfield-notification notification-txt-position" id="id-notification">
+              {{jobAddInfo.idError}}
+            </div>
+          </div>
+          <div class="div-positioning txtfield-frm-top">
+            <span class="txt-coloring span-frm-top">Company</span>
+            <input id="companyName" class="inputfield" type="text" name="company" ng-init="company = ''" ng-model="company"/>
+            <div class="txtfield-notification notification-txt-position" id="company-notification">
+              {{jobAddInfo.companyError}}
+            </div>
+          </div>
+          <div class="div-positioning txtfield-frm-top">
+            <span class="txt-coloring span-frm-top">Post</span>
+            <input id="lastName" class="inputfield" type="text" name="post" ng-init="post = ''" ng-model="post"/>
+            <div class="txtfield-notification notification-txt-position" id="post-notification">
+              {{jobAddInfo.postError}}
+            </div>
+          </div>
+          <div class="div-positioning txtfield-frm-top">
+            <span class="txt-coloring span-frm-top">Bond</span>
+            <input id="email" class="inputfield" type="text" name="bond" ng-init="bond = ''" ng-model="bond"/>
+            <div class="txtfield-notification notification-txt-position" id="bond-notification" name="mail">
+              {{jobAddInfo.bondError}}
+            </div>
+          </div>
+          <div class="div-positioning txtfield-frm-top">
+            <span class="txt-coloring span-frm-top">Salary</span>
+            <input id="password" class="inputfield" type="text" name="salary" ng-init="salary = ''" ng-model="salary"/>
+            <div class="txtfield-notification notification-txt-position" id="salary-notification">
+              {{jobAddInfo.salaryError}}
+            </div>
+          </div>
+          <div class="div-positioning txtfield-frm-top">
+            <span class="txt-coloring span-frm-top">Place</span>
+            <input id="confirm-password" class="inputfield" type="text" name="place" ng-init="place = ''" ng-model="place"/>
+            <div class="txtfield-notification notification-txt-position" id="place-notification">
+              {{jobAddInfo.placeError}}
+            </div>
+          </div>
+          <div class="div-positioning txtfield-frm-top">
+            <span class="txt-coloring addressfield-position address-frm-top">Skills Required</span>
+            <textarea id="permanent-address" class="responsibilityfield" name="responsibilities" rows="20" cols="6" ng-init="responsibilities = ''" ng-model="responsibilities"></textarea>
+            <div class="txtfield-notification" id="skill-notification">
+            </div>
+          </div>
+          <div class="div-positioning txtfield-frm-top txtfield-frm-left">
+          {{jobAddInfo.successMsg}}
+          </div>
+          <div>
+            <input class="button add-position" type="submit" ng-click="validateJob()" value="Add"/>
+          </div>
+        </div>
+      </div>
+    </form>

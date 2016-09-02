@@ -1,0 +1,40 @@
+<div>
+  <div>
+    <a href="#/">
+      <img class="logo" src="/images/logo.png">
+    </a>
+  </div>
+  <form name="loginForm" method="post">
+    <div class="login-container sign-login-container">
+      <div>
+        <a class="txt-coloring sign-up" href="#/sign-up">
+        <label class="pointer">Sign Up</label>
+        </a>
+        <a class="txt-coloring home" href="#/">
+        <label class="pointer">Home</label>
+        </a>
+        <div class="txt-coloring label">
+          <label>Welcome Back</label>
+        </div>
+        <div>
+          <input id="email" class="txtfield-size" type="text" name="email" ng-init="email = ''" ng-model="email" placeholder="Email"/>
+        </div>
+        <div class="login-notificationbox" id="email-result-popup">{{emailError}}</div>
+        <div>
+          <input id="password" class="txtfield-size" type="password" name="password" ng-init="password = ''" ng-model="password" placeholder="Password"/>
+        </div>
+        <div class="login-notificationbox " id="passwd-result-popup">{{passwordError}}</div>
+        <div>
+          <input id="box" class="background-coloring box" type="checkbox" name="box"/>         
+          <label for="box" class="txt-coloring">Remember me</label>
+          <a class="txt-coloring forgot-passwd" ng-href="#/forgot-password">
+          <span>Forgot password?</span>
+          </a>
+        </div>
+        <div>
+          <input class="button login-position" ng-click="validateEmailPage()" type="submit" value="Login"/>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

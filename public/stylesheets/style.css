@@ -1,0 +1,299 @@
+body {
+  background-color: #e2e2e2;
+  min-width: 960px;
+  margin: 0;
+} 
+
+img {
+  display: block;
+  border: 0;
+}
+
+.clearfix {
+  width: 960px;
+  margin: 0 auto;
+}
+.clearfix:after {
+  clear:both;
+  content:"";
+  display:block;
+}
+
+.txt-coloring {
+  color: #FFFFFF;
+  font-family: entypo;
+}
+
+.sign-up {
+  float: right;
+  text-decoration: none;
+  margin-left: 11%;
+}
+
+.widthOfPost {
+  width: 34%;
+}
+
+.rightPost {
+  float: right;
+  color: #0000FF;
+}
+
+.button {
+  cursor: pointer;
+  width: 89px;
+  height: 38px;
+  border-color: #FFFFFF;
+  border: 1px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #4CAF50;
+}
+
+.register {
+  float: left;
+  display: inline-block;
+  margin-top: 4%;
+  margin-left: 19%;
+}
+
+.unregister {
+  float: right;
+  display: inline-block;
+  margin-right: 41%;
+  margin-top: 4%;
+}
+
+.add-position {
+  margin: 6% 0 0 46%;
+}
+
+.register-position {
+  margin: 6% 0 0 38%;
+}
+
+.unregister-position {
+  margin: 6% 0 0 52%;
+}
+
+.div-positioning {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.frame2 {
+  height: 316px;
+  width: 924px;
+  margin: 0 auto 18px;
+  padding: 6px 7px 0;
+  text-align: center;
+}
+
+.header {
+  background: #585858;
+}
+
+.jobHeader {
+  background: #6d7993;
+}
+
+.innerLogo {
+  float: left;
+  display: inline-block;
+}
+
+.navigation {
+  float: right;
+  list-style: none;
+  margin: 28px 0 0;
+  padding: 0;
+}
+
+.navigation li {
+  float: left;
+  margin-left: 30px;
+  position: relative;
+}
+
+.navigation li a {
+  color: #b8c6ac;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navigation li  a:hover {
+  color: #FFF;
+}
+
+.contents {
+  padding-bottom: 24px;
+}
+
+.clearfix{
+  width: 940px;
+  padding: 30px 10px 0;
+}
+
+h1 {
+  color: #57614e;
+  font: 29px/30px "Times New Roman", Times, serif;
+  margin: 0 0 12px;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: #626262;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+h3 {
+  color: #000000;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+p {
+  color: #626262;
+  font: 14px/24px Arial, Helvetica, sans-serif;
+  margin: 0 0 24px;
+}
+
+.color {
+  text-decoration: none;
+}
+
+.footer {
+  background: #d9d9d9;
+  border-top: 2px solid #fff; 
+}
+
+.div-position {
+  text-align: center;
+}
+
+.footer .section {
+  float: left;
+  min-height: 146px;
+  width: 259px;
+  padding: 30px;
+}
+
+.footer .section h4 {
+  color: #626262;
+  font: bold 12px/24px Arial, Helvetica, sans-serif;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.footer .section p {
+  font-size: 12px;
+  margin: 0;
+}
+
+.reg-frm-top {
+  width: 90%;
+  margin: 4% 7% 0% 0px;
+}
+
+.responseMsg {
+  text-align: center;
+  color: #0000FF;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+div.table-title {
+  display: block;
+  margin: auto;
+  max-width: 600px;
+  padding:5px;
+  width: 100%;
+}
+
+.table-title h3 {
+  color: #1b1e24;
+  font-size: 30px;
+  font-weight: 400;
+  font-style:normal;
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+  text-transform:uppercase;
+}
+
+.table-fill {
+  background: white;
+  border-radius:3px;
+  border-collapse: collapse;
+  height: 320px;
+  margin: auto;
+  max-width: 600px;
+  padding:5px;
+  width: 100%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  animation: float 5s infinite;
+}
+ 
+th {
+  color:#D5DDE5;;
+  background:#1b1e24;
+  border-bottom:4px solid #9ea7af;
+  border-right: 1px solid #343a45;
+  font-weight: 100;
+  padding:24px;
+  text-align:left;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  vertical-align:middle;
+}
+  
+tr {
+  border-top: 1px solid #C1C3D1;
+  border-bottom-: 1px solid #C1C3D1;
+  color:#666B85;
+  font-size:16px;
+  font-weight:normal;
+  text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+}
+ 
+tr:hover td {
+  background:#4E5066;
+  color:#FFFFFF;
+  border-top: 1px solid #22262e;
+  border-bottom: 1px solid #22262e;
+}
+ 
+td {
+  background:#FFFFFF;
+  padding:20px;
+  text-align:left;
+  vertical-align:middle;
+  font-weight:300;
+  font-size:18px;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid #C1C3D1;
+}
+
+th.text-left {
+  text-align: left;
+}
+
+th.text-center {
+  text-align: center;
+}
+
+th.text-right {
+  text-align: right;
+}
+
+td.text-left {
+  text-align: left; 
+}
+
+td.text-center {
+  text-align: center;
+}
+
+td.text-right {
+  text-align: right;
+}

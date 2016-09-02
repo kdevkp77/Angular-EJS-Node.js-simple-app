@@ -1,0 +1,71 @@
+<link rel="stylesheet" type="text/css" href="/stylesheets/index.css">
+    <div class="logo-container">
+      <a href="#/">
+        <img class="home-logo" src="/images/logo.png">
+      </a>
+    </div>
+    <form id="updateForm" class="register-container" name="Update" method="post" enctype="multipart/form-data">
+      <div class="sign-container sign-login-container">
+        <div class="inner-div-length">
+          <a class="txt-coloring sign-up" ng-href="#/delete-account" onclick="return confirm('Are you sure?')">
+          <label class="pointer">Delete Account</label>
+          </a>
+          <a class="txt-coloring changePassword" ng-href="#/change-password">
+          <label class="pointer">Change Password</label>
+          </a>
+          <div class="txt-coloring label">
+            <label>Profile</label>
+          </div>
+          <div class="div-positioning txtfield-frm-top">
+            <span class="txt-coloring span-frm-top">Name</span>
+            <input id="firstName" class="inputfield" type="text" name="fname" ng-model="viewProfile.name"/>
+            <div class="txtfield-notification notification-txt-position" id="fname-notification">
+            {{viewProfile.nameError}}
+            </div>
+          </div>
+          <div class="div-positioning txtfield-frm-top">
+            <span class="txt-coloring span-frm-top">Ph.No</span>
+            <input id="phno" class="inputfield" type="text" onblur ="validatePhNo()" name="viewProfile.phoneNo" ng-model="viewProfile.phoneNo" />
+            <div class="txtfield-notification notification-txt-position" id="phno-notification">
+            {{viewProfile.phNoError}}
+            </div>
+          </div>
+          <div class="div-positioning txtfield-frm-top">
+            <span class="txt-coloring addressfield-position address-frm-top">Address</span>
+            <textarea id="permanent-address" class="permanentfield" name="address" rows="20" cols="6" ng-model="viewProfile.location"></textarea>
+            <div class="txtfield-notification" id="permanent-address-notification">
+            {{viewProfile.addressError}}
+            </div>
+          </div>
+          <div class="div-positioning txtfield-frm-top">
+            <span class="txt-coloring span-frm-top">Privilage</span>
+            <input id="privilage" class="inputfield" type="text" name="privilage" ng-model="viewProfile.privilage" placeholder="fresher/professional"/>
+            <div class="txtfield-notification notification-txt-position" id="privilage-notification">
+            {{viewProfile.privilageError}}
+            </div>
+          </div>
+          <div id="display" class="div-positioning txtfield-frm-top" name="experience">
+            <span class="txt-coloring span-frm-top frm-top">Work Experience</span>
+            <input id="experience" class="inputfield frm-top" type="number" name="workExperience" ng-model="viewProfile.workExperience" />
+          </div>
+          <div class="div-positioning txtfield-frm-top sex-frm-top">
+            <span class="txt-coloring span-frm-top">Gender</span>
+            <input id="gender" class="inputfield" type="text" name="gender" ng-model="viewProfile.gender" />
+            <div class="txtfield-notification notification-txt-position" id="gender-notification">
+            {{viewProfile.genderError}}
+            </div>
+          </div>
+          <div class="div-positioning txtfield-frm-top">
+            <span class="txt-coloring span-frm-top">Upload Resume</span>
+            <input id="resume" class="inputfield additionalFeatures" type="file" ng-model="viewProfile.resume"
+            file-model="cv" name="resume" />
+            <div class="txtfield-notification notification-txt-position" id="resume-notification">
+            {{viewProfile.fileError}}
+            </div>
+          </div>
+          <div>
+            <input class="button submit-position" type="button"  value="Update" ng-click="validateProfile()" name="button"/>
+          </div>
+        </div>
+      </div>
+    </form>

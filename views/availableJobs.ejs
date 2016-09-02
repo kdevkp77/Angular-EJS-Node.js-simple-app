@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <charset="UTF-8">
+  <title>Job Finder</title>
+  <link rel="stylesheet" href="/stylesheets/style.css" type="text/css">
+</head>
+<body>
+  <div class="jobeader">
+    <div class="clearfix">
+     <a class="txt-coloring sign-up" href="/login">
+       <label class="pointer">Login</label>
+     </a>
+     <a class="txt-coloring sign-up" href="/admin">
+        <label class="pointer">Admin</label>
+      </a>
+      <div class="logo">
+        <a href="/">
+          <img src="/images/logo.png" class="logo" height="100" width="250">
+        </a>
+      </div>
+    </div>
+  </div>
+    <div class="table-title">
+      <h3>Available Jobs</h3>
+    </div>
+    <table class="table-fill">
+      <thead>
+        <tr>
+          <th class="text-left">Job</th>
+          <th class="text-left">Place</th>
+          <th class="text-left">Responsibilities</th>
+          <th class="text-left">Bond</th>
+          <th class="text-left">Salary</th>
+        </tr>
+      </thead>
+      <tbody class="table-hover">
+        <% for(var i=0; i< post.length; i++) { %>
+        <tr>
+          <td class="text-left"><%= post[i] %></td>
+          <td class="text-left"><%= company[i] %></td>
+          <td class="text-left"><%= responsibilities[i] %></td>
+          <td class="text-left"><%= bond[i] %></td>
+          <td class="text-left"><%= salary[i] %></td>
+        </tr>
+        <% } %>
+      </tbody>
+    </table>
+  </body>
+</html>  

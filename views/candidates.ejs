@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <charset="UTF-8"> 
+    <link rel="stylesheet" type="text/css" href="/stylesheets/index.css">
+    <link rel="shortcut icon" type="image/png" href="/images/logo.png">
+    <title>Job Finder</title>
+  </head>
+  <body style="background: url('/images/bg3.jpg') no-repeat fixed;background-size: cover;">
+    <div>
+      <div>
+        <a href="/">
+          <img class="logo" src="/images/logo.png">
+        </a>
+      </div>
+      <form name="addingJob" action="/candidates" method="post">
+        <div class="login-container sign-login-container">
+          <div>
+          <a class="txt-coloring sign-up" href="/login">
+          <label class="pointer">Login</label>
+          </a>
+          <a class="txt-coloring sign-up" href="/admin">
+          <label class="pointer">Admin</label>
+          </a>
+            <div class="txt-coloring label">
+              <label>Candidates List</label>
+            </div>
+            <div>
+              <input id="company" class="txtfield-size" type="text" name="company" placeholder="Company"/>
+            </div>
+            <div class="login-notificationbox" id="company-result-popup"><%= companyError %></div>
+            <div>
+              <input id="password" class="txtfield-size" type="text" name="post" placeholder="Post"/>
+            </div>
+            <div class="login-notificationbox " id="post-result-popup"><%= postError %></div>
+            <div>
+              <input class="button login-position" type="submit" value="Find"/>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

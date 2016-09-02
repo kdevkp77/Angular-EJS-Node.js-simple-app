@@ -1,0 +1,1173 @@
+<<<<<<< HEAD
+@font-face {
+  font-family: entypo;
+  src: url("../font/28 Days Later.ttf");
+}
+
+.bg-image{
+  background: url("../images/bg.jpg") no-repeat fixed;
+  background-size: cover;
+  width:auto;
+  height:auto;
+  font-family: entypo;
+}
+
+.bg3-image{
+  background: url("../images/bg3.jpg") no-repeat fixed;
+  background-size: cover;
+  width:auto;
+  height:auto;
+  font-family: entypo;
+}
+
+.sign-container {
+  margin-left: 31%;
+  padding: 4% 3%;
+}
+
+.login-container {
+  margin-left: 34%;
+  padding: 3% 2%;
+  margin-top:13%;
+}
+
+.sign-login-container {
+  width: 373px;
+  display: inline-block;
+  left: 27%;
+  border-radius: 2% 2% 3% 3%;
+  background: #000000;
+  opacity: .5;
+
+}
+
+.inner-div-length {
+  width: 384px;
+}
+
+.logo {
+  display: block;
+  position: fixed;
+  left: 35%;
+  width: 417px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.label {
+  font-family: entypo;
+  font-size: 23px;
+  font-weight: 500;
+  margin-bottom: 13%;
+}
+
+.txtfield-size {
+  background-color: #FFFFFF;
+  width: 228px;
+  height: 33px;
+  border: 1px;
+  font-size: 19px;
+  margin-top: 4%;
+  padding: 2%;
+}
+
+.background-coloring {
+  background-color: #FFFFFF;
+}
+
+.txt-coloring {
+  color: #FFFFFF;
+  font-family: entypo;
+}
+
+.txt-color {
+  color: #f5deb3;
+}
+
+.color{
+  color: #FFF;
+  font-family: serif;
+  text-decoration: none;
+}
+
+.color h2:hover{
+  color: #FF0000;
+  font-family: serif;
+  text-decoration: none;
+  cursor:pointer;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.button {
+  cursor: pointer;
+  width: 75px;
+  height: 38px;
+  border-color: #FFFFFF;
+  border: 1px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #4CAF50;
+}
+
+.signUp-view {
+  width: 55%;
+  margin-top: 80px;
+  margin-left: 72%;
+}
+
+.home-logo {
+  display: block;
+  float:right;
+  width: 417px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.logo-container {
+  width: 50%;
+  display: inline-block
+}
+
+.login-position {
+  margin: 7% 0 0 24%;
+}
+
+.submit-position {
+  margin: 6% 0 0 39%;
+}
+
+.forgot-passwd {
+  margin-left: 4%;
+  text-decoration: none;
+}
+
+.sign-up {
+  float: right;
+  text-decoration: none;
+  margin-left: 11%;
+}
+
+.home {
+  text-decoration: none;
+  margin-left: 70%;
+}
+
+.changePassword{
+  text-decoration: none;
+  margin-left: 36%;
+}
+
+.inputfield {
+  background-color: #FFFFFF;
+  width: 201px;
+  font-size: 16px;
+  height: 26px;
+  float: right;
+}
+
+.div-positioning {
+  float: right;
+  text-align: left;
+}
+
+.box-position {
+  margin-left: 28%;
+}
+.secondBox-position {
+  margin-left: 8%;
+}
+
+.additionalFeatures {
+  width: 27%;
+  height: 20px;
+  float: left;
+}
+
+.permanentfield {
+  background-color: #FFFFFF;
+  width: 199px;
+  text-align: initial;
+  font-size:16px;
+  height: 78px;
+  resize: none;
+  margin-left: 25%;
+}
+
+.contactfield {
+  background-color: #FFFFFF;
+  width: 199px;
+  text-align: initial;
+  font-size:16px;
+  height: 78px;
+  resize: none;
+  margin-left: 8%;
+}
+
+.sendMessage {
+  cursor: pointer;
+  width: 120px;
+  height: 38px;
+  border-color: #FFFFFF;
+  border: 1px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #4CAF50;
+}
+
+.sendMessage-position {
+  margin: 7% 0 0 16%;
+}
+
+.inner-div {
+  width: 383px;
+  height: 592px;
+}
+
+.responsibilityfield {
+  background-color: #FFFFFF;
+  width: 199px;
+  text-align: initial;
+  font-size: 16px;
+  height: 78px;
+  resize: none;
+  margin-left: 11%;
+}
+
+.add-position {
+  margin: 6% 0 0 40%;
+}
+
+.male-radio-position {
+  background-color: #FFFFFF;
+  height: 17px;
+  margin-left: 28%;
+  float: left;
+}
+
+.female-radio-position {
+  background-color: #FFFFFF;
+  height: 17px;
+  margin-left: 14%;
+  float: left;
+}
+
+.addressfield-position {
+  float: left;
+  margin-top: 10%;
+}
+
+.span-frm-top {
+  margin-top: 2%;
+  float: left;
+  width: 40%
+}
+
+.txtfield-frm-top {
+  width: 90%;
+  margin: 4% 0 1% 0;
+}
+
+.txtfield-frm-left {
+  width: 55%;
+  height: 20px;
+  margin-right: 21%;
+  color: #006400;
+  font-size: 20px;
+}
+
+.addres-frm-top {
+  margin-top: 9%;
+  float: left;
+}
+
+.frm-top {
+  margin-top: 13%;
+}
+
+.checkbox-txt-frm-top {
+  width: 76%;
+  height: 1px;
+  margin-left: 25%;
+}
+
+.contact-txtbox-frm-left {
+  margin-left: 8%;
+}
+
+.gender-frm-top {
+  float: left;
+}
+
+.female-frm-top {
+  float: left;
+  margin-left: 3%;
+}
+
+.login-notificationbox {
+  color:#FF0000;
+  width: 48%;
+  margin-top: 3%;
+  font-family: sans-serif;
+}
+
+.txtfield-notification {
+  position: relative;
+  color: #FF0000;
+  width: 59%;
+  height: 30px;
+  margin-left: 41%;
+  font-family: sans-serif; 
+}
+
+.privilage {
+  position: relative;
+  color: #FF0000;
+  width: 70%;
+  height: 30px;
+  margin-left: 28%;
+  font-family: sans-serif;
+}
+
+.notification-txt-position {
+  margin-top: 10%;
+}
+
+.gender-notification-position {
+  float: left;
+}
+
+.txt-modified-style {
+  background-color: #FFFFFF;
+  width: 228px;
+  height: 33px;
+  border: 1px;
+  font-size: 19px;
+  margin-top: 4%;
+  padding: 2%;
+  border-style: solid;
+  border-color: #FF0000;
+}
+
+.title {
+  color: #FFF;
+  background-color: #000000;
+  opacity:0.4;
+  border: none;
+  display: inline-block;
+  font-size: 36px;
+  font-weight: 400;
+  text-align: center;
+  font-family: sans-serif;
+  width: 100%;
+  height: 141px;
+}
+
+.size {
+  display: inline-block;
+}
+
+.candidates {
+  width: 50%;
+  float: right;
+}
+
+.professionals {
+  width: 50%;
+  height: 315px;
+  display: inline-block;
+  float: right;
+}
+
+.delete {
+  width: 50%;
+  height: 315px;
+  display: inline-block;
+  float: right;
+}
+
+.update {
+  width: 50%;
+  height: 315px;
+  display: inline-block;
+  float: right;
+}
+
+.availableJobs {
+  width: 50%;
+  height: 315px;
+  display: inline-block;
+  float: right;
+}
+
+.freshers {
+  width: 50%;
+  height: 315px;
+  display: inline-block;
+}
+
+.button-view {
+  color: #FFF;
+  background-color: #F80;
+  opacity: 0.8;
+  border: none;
+  font-size: 16px;
+  line-height: 1.42857143;
+  cursor: pointer;
+  height: 72px;
+}
+
+.fresher-view {
+  margin-left: 450%;
+  margin-top: 284%;
+  width: 100%;
+}
+
+.professional-view {
+  margin-left: 458%;
+  margin-top: 353%;
+  width: 109%;
+}
+
+.update-view {
+  margin-left: 574%;
+  margin-top: 104%;
+  width: 100%;
+}
+
+.jobs-view {
+  margin-left: 785%;
+  margin-top: 174%;
+  width: 100%
+}
+.login-view {
+  width: 55%;
+  margin-top: 80px;
+  margin-left: 650px;
+}
+
+.login-image {
+  background: url("../images/bg.jpg") no-repeat fixed;
+  background-size: cover;
+}
+
+.image-size {
+  width: 50%;
+}
+
+.image-view {
+  width: 55%;
+}
+
+.txt-frm-left {
+  width: 55%;
+  height: 20px;
+  margin-right: 21%;
+  color: #FF0000;
+  font-size: 20px;
+}
+
+.jobLabel {
+  color: #FFF;
+  text-align: center;
+  font-size: 36px;
+  display: inline-block;
+  width: 52%;
+  margin-top: 7%;
+  font-weight: 400;
+  margin-left: 46%;
+}
+
+.heading {
+  width: 50%;
+  display: inline-block;
+  float: left;
+}
+
+.fields {
+    width: 50%;
+    float: left;
+    display: inline-block;
+    height: 141px;
+}
+
+#error-style {
+  border-style: solid;
+  border-color: #FF0000;
+}
+
+.register-container {
+  width: 50%;
+  display: inline-block;
+  float: right;
+}
+
+.sex-frm-top {
+  margin-top: 22%;
+}
+
+.whatField {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  background: transparent;
+  font: 16px Arial, Helvetica, sans-serif;
+  height: 50px;
+  padding-left: 6px;
+  margin-top: 2%;
+  color: #FFF;
+}
+
+.whereField {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  background: transparent;
+  font: 16px Arial, Helvetica, sans-serif;
+  padding-left: 6px;
+  height: 50px;
+  margin-top: 2%;
+  color: #FFF;
+}
+
+.reg-container {
+  width: 50%;
+  display: inline-block;
+  margin-left: 25%;
+}
+
+.findJob-position {
+  margin: 7% 0px 0px 6%;
+}
+
+#display {
+  display: none;
+}
+
+.findJob {
+  cursor: pointer;
+  width: 85px;
+  height: 38px;
+  border-color: #FFFFFF;
+  border: 1px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #4CAF50;
+}
+
+.ng-hide {
+  height: 0;
+  width: 0;
+  background-color: transparent;
+  top:-200px;
+  left: 200px;
+}
+
+.field-size {
+  width: 91%;
+  display: inline-block;
+  float: left;
+}
+
+#newDisplay {
+  display: inline-block;
+}
+
+#animation {
+  -webkit-animation:shake 0.3s linear;
+}
+
+#animations {
+  -webkit-animation:shake 0.3s linear;
+}
+
+@-webkit-keyframes shake {
+  0%{-webkit-transform:translateY(4px);}
+  35%{-webkit-transform:translateY(-4px);}
+  75%{-webkit-transform:translateX(2px);}
+  100%{-webkit-transform:translateX(-2px);}
+}
+
+@font-face {
+  font-family: entypo;
+  src: url("../font/28 Days Later.ttf");
+}
+
+.bg-image{
+  background: url("../images/bg.jpg") no-repeat fixed;
+  background-size: cover;
+  width:auto;
+  height:auto;
+  font-family: entypo;
+}
+
+.bg3-image{
+  background: url("../images/bg3.jpg") no-repeat fixed;
+  background-size: cover;
+  width:auto;
+  height:auto;
+  font-family: entypo;
+}
+
+.sign-container {
+  margin-left: 31%;
+  padding: 4% 3%;
+}
+
+.login-container {
+  margin-left: 34%;
+  padding: 3% 2%;
+  margin-top:13%;
+}
+
+.sign-login-container {
+  width: 373px;
+  display: inline-block;
+  left: 27%;
+  border-radius: 2% 2% 3% 3%;
+  background: #000000;
+  opacity: .5;
+
+}
+
+.inner-div-length {
+  width: 384px;
+}
+
+.logo {
+  display: block;
+  position: fixed;
+  left: 35%;
+  width: 417px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.label {
+  font-family: entypo;
+  font-size: 23px;
+  font-weight: 500;
+  margin-bottom: 13%;
+}
+
+.txtfield-size {
+  background-color: #FFFFFF;
+  width: 228px;
+  height: 33px;
+  border: 1px;
+  font-size: 19px;
+  margin-top: 4%;
+  padding: 2%;
+}
+
+.background-coloring {
+  background-color: #FFFFFF;
+}
+
+.txt-coloring {
+  color: #FFFFFF;
+  font-family: entypo;
+}
+
+.txt-color {
+  color: #f5deb3;
+}
+
+.color{
+  color: #FFF;
+  font-family: serif;
+  text-decoration: none;
+}
+
+.color h2:hover{
+  color: red;
+  font-family: serif;
+  text-decoration: none;
+  cursor:pointer;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.button {
+  cursor: pointer;
+  width: 75px;
+  height: 38px;
+  border-color: #FFFFFF;
+  border: 1px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #4CAF50;
+}
+
+.signUp-view {
+  width: 55%;
+  margin-top: 80px;
+  margin-left: 72%;
+}
+
+.home-logo {
+  display: block;
+  float:right;
+  width: 417px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.logo-container {
+  width: 50%;
+  display: inline-block
+}
+
+.login-position {
+  margin: 7% 0 0 24%;
+}
+
+.submit-position {
+  margin: 6% 0 0 39%;
+}
+
+.forgot-passwd {
+  margin-left: 4%;
+  text-decoration: none;
+}
+
+.sign-up {
+  float: right;
+  text-decoration: none;
+  margin-left: 11%;
+}
+
+.home {
+  text-decoration: none;
+  margin-left: 70%;
+}
+
+.changePassword{
+  text-decoration: none;
+  margin-left: 36%;
+}
+
+.inputfield {
+  background-color: #FFFFFF;
+  width: 201px;
+  font-size: 16px;
+  height: 26px;
+  float: right;
+}
+
+.div-positioning {
+  float: right;
+  text-align: left;
+}
+
+.box-position {
+  margin-left: 28%;
+}
+.secondBox-position {
+  margin-left: 8%;
+}
+
+.additionalFeatures {
+  width: 27%;
+  height: 20px;
+  float: left;
+}
+
+.permanentfield {
+  background-color: #FFFFFF;
+  width: 199px;
+  text-align: initial;
+  font-size:16px;
+  height: 78px;
+  resize: none;
+  margin-left: 25%;
+}
+
+.contactfield {
+  background-color: #FFFFFF;
+  width: 199px;
+  text-align: initial;
+  font-size:16px;
+  height: 78px;
+  resize: none;
+  margin-left: 8%;
+}
+
+.sendMessage {
+  cursor: pointer;
+  width: 120px;
+  height: 38px;
+  border-color: #FFFFFF;
+  border: 1px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #4CAF50;
+}
+
+.sendMessage-position {
+  margin: 7% 0 0 16%;
+}
+
+.inner-div {
+  width: 383px;
+  height: 592px;
+}
+
+.responsibilityfield {
+  background-color: #FFFFFF;
+  width: 199px;
+  text-align: initial;
+  font-size: 16px;
+  height: 78px;
+  resize: none;
+  margin-left: 11%;
+}
+
+.add-position {
+  margin: 6% 0 0 40%;
+}
+
+.male-radio-position {
+  background-color: #FFFFFF;
+  height: 17px;
+  margin-left: 28%;
+  float: left;
+}
+
+.female-radio-position {
+  background-color: #FFFFFF;
+  height: 17px;
+  margin-left: 14%;
+  float: left;
+}
+
+.addressfield-position {
+  float: left;
+  margin-top: 10%;
+}
+
+.span-frm-top {
+  margin-top: 2%;
+  float: left;
+  width: 40%
+}
+
+.txtfield-frm-top {
+  width: 90%;
+  margin: 4% 0 1% 0;
+}
+
+.txtfield-frm-left {
+  width: 55%;
+  height: 20px;
+  margin-right: 21%;
+  color: #006400;
+  font-size: 20px;
+}
+
+.addres-frm-top {
+  margin-top: 9%;
+  float: left;
+}
+
+.frm-top {
+  margin-top: 13%;
+}
+
+.checkbox-txt-frm-top {
+  width: 76%;
+  height: 1px;
+  margin-left: 25%;
+}
+
+.contact-txtbox-frm-left {
+  margin-left: 8%;
+}
+
+.gender-frm-top {
+  float: left;
+}
+
+.female-frm-top {
+  float: left;
+  margin-left: 3%;
+}
+
+.login-notificationbox {
+  color:#FF0000;
+  width: 48%;
+  margin-top: 3%;
+  font-family: sans-serif;
+}
+
+.txtfield-notification {
+  position: relative;
+  color: #FF0000;
+  width: 59%;
+  height: 30px;
+  margin-left: 41%;
+  font-family: sans-serif; 
+}
+
+.privilage {
+  position: relative;
+  color: #FF0000;
+  width: 70%;
+  height: 30px;
+  margin-left: 28%;
+  font-family: sans-serif;
+}
+
+.notification-txt-position {
+  margin-top: 10%;
+}
+
+.gender-notification-position {
+  float: left;
+}
+
+.txt-modified-style {
+  background-color: #FFFFFF;
+  width: 228px;
+  height: 33px;
+  border: 1px;
+  font-size: 19px;
+  margin-top: 4%;
+  padding: 2%;
+  border-style: solid;
+  border-color: #FF0000;
+}
+
+.title {
+  color: #FFF;
+  background-color: #000000;
+  opacity:0.4;
+  border: none;
+  display: inline-block;
+  font-size: 36px;
+  font-weight: 400;
+  text-align: center;
+  font-family: sans-serif;
+  width: 100%;
+  height: 141px;
+}
+
+.size {
+  display: inline-block;
+}
+
+.candidates {
+  width: 50%;
+  float: right;
+}
+
+.professionals {
+  width: 50%;
+  height: 315px;
+  display: inline-block;
+  float: right;
+}
+
+.delete {
+  width: 50%;
+  height: 315px;
+  display: inline-block;
+  float: right;
+}
+
+.update {
+  width: 50%;
+  height: 315px;
+  display: inline-block;
+  float: right;
+}
+
+.availableJobs {
+  width: 50%;
+  height: 315px;
+  display: inline-block;
+  float: right;
+}
+
+.freshers {
+  width: 50%;
+  height: 315px;
+  display: inline-block;
+}
+
+.button-view {
+  color: #FFF;
+  background-color: #F80;
+  opacity: 0.8;
+  border: none;
+  font-size: 16px;
+  line-height: 1.42857143;
+  cursor: pointer;
+  height: 72px;
+}
+
+.fresher-view {
+  margin-left: 450%;
+  margin-top: 284%;
+  width: 100%;
+}
+
+.professional-view {
+  margin-left: 458%;
+  margin-top: 353%;
+  width: 109%;
+}
+
+.update-view {
+  margin-left: 574%;
+  margin-top: 104%;
+  width: 100%;
+}
+
+.jobs-view {
+  margin-left: 785%;
+  margin-top: 174%;
+  width: 100%
+}
+.login-view {
+  width: 55%;
+  margin-top: 80px;
+  margin-left: 650px;
+}
+
+.login-image {
+  background: url("../images/bg.jpg") no-repeat fixed;
+  background-size: cover;
+}
+
+.image-size {
+  width: 50%;
+}
+
+.image-view {
+  width: 55%;
+}
+
+.jobLabel {
+  color: #FFF;
+  text-align: center;
+  font-size: 36px;
+  display: inline-block;
+  width: 52%;
+  margin-top: 7%;
+  font-weight: 400;
+  margin-left: 46%;
+}
+
+.heading {
+  width: 50%;
+  display: inline-block;
+  float: left;
+}
+
+.fields {
+    width: 50%;
+    float: left;
+    display: inline-block;
+    height: 141px;
+}
+
+#error-style {
+  border-style: solid;
+  border-color: #FF0000;
+}
+
+.register-container {
+  width: 50%;
+  display: inline-block;
+  float: right;
+}
+
+.sex-frm-top {
+  margin-top: 22%;
+}
+
+.whatField {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  background: transparent;
+  font: 16px Arial, Helvetica, sans-serif;
+  height: 50px;
+  padding-left: 6px;
+  margin-top: 2%;
+  color: #FFF;
+}
+
+.whereField {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  background: transparent;
+  font: 16px Arial, Helvetica, sans-serif;
+  padding-left: 6px;
+  height: 50px;
+  margin-top: 2%;
+  color: #FFF;
+}
+
+.reg-container {
+  width: 50%;
+  display: inline-block;
+  margin-left: 25%;
+}
+
+.findJob-position {
+  margin: 7% 0px 0px 6%;
+}
+
+#display {
+  display: none;
+}
+
+.findJob {
+  cursor: pointer;
+  width: 85px;
+  height: 38px;
+  border-color: #FFFFFF;
+  border: 1px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #4CAF50;
+}
+
+.field-size {
+  width: 91%;
+  display: inline-block;
+  float: left;
+}
+
+#newDisplay {
+  display: inline-block;
+}
+
+#animation {
+  -webkit-animation:shake 0.3s linear;
+}
+
+#animations {
+  -webkit-animation:shake 0.3s linear;
+}
+
+@-webkit-keyframes shake {
+  0%{-webkit-transform:translateY(4px);}
+  35%{-webkit-transform:translateY(-4px);}
+  75%{-webkit-transform:translateX(2px);}
+  100%{-webkit-transform:translateX(-2px);}
+}
+>>>>>>> f46993e7b8c6157e4e597126ac8987706d3eddbf

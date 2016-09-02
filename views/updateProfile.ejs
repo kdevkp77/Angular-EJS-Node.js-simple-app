@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <charset="UTF-8"> 
+    <link rel="stylesheet" type="text/css" href="stylesheets/index.css">
+    <link rel="shortcut icon" href="/images/logo.png">
+    <script type="text/javascript" src="/javascripts/index.js"></script>
+    <title>Job Finder</title>
+  </head>
+  <body style="background: url('/images/bg.jpg') no-repeat fixed;background-size: cover;" onload="workExperience()">
+    <div class="logo-container">
+      <a href="/">
+        <img class="home-logo" src="/images/logo.png">
+      </a>
+    </div>
+    <form id="updateForm" class="register-container" name="Update" action="/viewProfile" method="post" enctype="multipart/form-data">
+      <div class="sign-container sign-login-container">
+        <div class="inner-div-length">
+          <a class="txt-coloring sign-up" href="/deleteAccount">
+          <label class="pointer">Delete Account</label>
+          </a>
+          <a class="txt-coloring changePassword" href="changePassword">
+          <label class="pointer">Change Password</label>
+          </a>
+          <div class="txt-coloring label">
+            <label>Profile</label>
+          </div>
+          <div class="div-positioning txtfield-frm-top">
+            <span class="txt-coloring span-frm-top">Name</span>
+            <input id="firstName" class="inputfield" type="text" name="fname" value="<%= name%>" />
+            <div class="txtfield-notification notification-txt-position" id="fname-notification">
+            <%= nameError%>
+            </div>
+          </div>
+          <div class="div-positioning txtfield-frm-top">
+            <span class="txt-coloring span-frm-top">Ph.No</span>
+            <input id="phno" class="inputfield" type="text" onblur ="validatePhNo()" name="phoneNo" value="<%= phoneNo%>" />
+            <div class="txtfield-notification notification-txt-position" id="phno-notification">
+            <%= phNoError%>
+            </div>
+          </div>
+          <div class="div-positioning txtfield-frm-top">
+            <span class="txt-coloring addressfield-position address-frm-top">Address</span>
+            <textarea id="permanent-address" class="permanentfield" name="address" rows="20" cols="6"><%= location%></textarea>
+            <div class="txtfield-notification" id="permanent-address-notification">
+            <%= addressError%>
+            </div>
+          </div>
+          <div class="div-positioning txtfield-frm-top">
+            <span class="txt-coloring span-frm-top">Privilage</span>
+            <input id="privilage" class="inputfield" type="text" name="privilage" value="<%= privilage%>" placeholder="fresher/professional"/>
+            <div class="txtfield-notification notification-txt-position" id="privilage-notification">
+            <%= privilageError%>
+            </div>
+          </div>
+          <div id="display" class="div-positioning txtfield-frm-top" name="experience">
+            <span class="txt-coloring span-frm-top frm-top">Work Experience</span>
+            <input id="experience" class="inputfield frm-top" type="number" name="workExperience" value="<%= workExperience%>" />
+          </div>
+          <div class="div-positioning txtfield-frm-top sex-frm-top">
+            <span class="txt-coloring span-frm-top">Gender</span>
+            <input id="gender" class="inputfield" type="text" name="gender" value="<%= gender%>" />
+            <div class="txtfield-notification notification-txt-position" id="gender-notification">
+            <%= genderError%>
+            </div>
+          </div>
+          <div class="div-positioning txtfield-frm-top">
+            <span class="txt-coloring span-frm-top">Upload Resume</span>
+            <input id="resume" class="inputfield additionalFeatures" type="file" value="<%= resume%>"
+            name="resume" />
+            <div class="txtfield-notification notification-txt-position" id="resume-notification">
+            <%= fileError%>
+            </div>
+          </div>
+          <div>
+            <input class="button submit-position" type="button"  value="Update" onclick="validateProfile()" name="button"/>
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

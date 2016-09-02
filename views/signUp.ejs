@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <charset="UTF-8"> 
+    <link rel="stylesheet" type="text/css" href="/stylesheets/index.css">
+    <link rel="shortcut icon" href="/images/logo.png">
+    <script type="text/javascript" src="/javascripts/index.js"></script>
+    <title>Job Finder</title>
+  </head>
+  <body style="background: url('/images/bg.jpg') no-repeat fixed;background-size: cover;">
+    <div class="logo-container">
+      <a href="/">
+        <img class="logo" src="/images/logo.png">
+      </a>
+    </div>
+    <form class="register-container" name="loginForm" action="/signUp" method="post" enctype="multipart/form-data">
+      <div class="sign-container sign-login-container">
+        <div class="inner-div-length">
+          <a class="txt-coloring sign-up" href="login">
+          <label class="pointer">Login</label>
+          </a>
+          <a class="txt-coloring home" href="/">
+          <label class="pointer">Home</label>
+          </a>
+          <div class="txt-coloring label">
+            <label>Register Here</label>
+          </div>
+          <div class="div-positioning txtfield-frm-top">
+            <span class="txt-coloring span-frm-top">Name</span>
+            <input id="firstName" class="inputfield" type="text" name="fname"/>
+            <div class="txtfield-notification notification-txt-position" id="fname-notification">
+              <%= nameError %>
+            </div>
+          </div>
+          <div class="div-positioning txtfield-frm-top">
+            <span class="txt-coloring span-frm-top">Email</span>
+            <input id="email" class="inputfield" type="text" name="email"/>
+            <div class="txtfield-notification notification-txt-position" id="email-notification" name="mail">
+              <%= emailError %>
+            </div>
+          </div>
+          <div class="div-positioning txtfield-frm-top">
+            <span class="txt-coloring span-frm-top">Password</span>
+            <input id="password" class="inputfield" type="password" name="password"/>
+            <div class="txtfield-notification notification-txt-position" id="passwd-notification">
+              <%= passwordError %>
+            </div>
+          </div>
+          <div class="div-positioning txtfield-frm-top">
+            <span class="txt-coloring span-frm-top">Confirm Password</span>
+            <input id="confirm-password" class="inputfield" type="password" name="password"/>
+            <div class="txtfield-notification notification-txt-position" id="confirm-passwd-notification">
+              <%= confirmError %>
+            </div>
+          </div>
+          <div class="div-positioning txtfield-frm-top">
+            <span class="txt-coloring span-frm-top">Ph.No</span>
+            <input id="phno" class="inputfield" type="text" onblur ="validatePhNo()" name="phoneNo"/>
+            <div class="txtfield-notification notification-txt-position" id="phno-notification">
+              <%= phNoError %>
+            </div>
+          </div>
+          <div class="div-positioning txtfield-frm-top">
+            <span class="txt-coloring addressfield-position address-frm-top">Address</span>
+            <textarea id="permanent-address" class="permanentfield" name="address" rows="20" cols="6"></textarea>
+            <div class="txtfield-notification" id="permanent-address-notification">
+              <%= locationError %>
+            </div>
+          </div>
+          <div class="checkbox-txt-frm-top">
+            <input id="fresher" class="background-coloring box-position" type="checkbox" name="fresher" onclick="removeExperience()"/> <label for="fresher" class="txt-coloring">Fresher</label>
+            <input id="professional" class="background-coloring secondBox-position" type="checkbox" name="professional" onclick="addExperience()"/> 
+            <label for="professional" class="txt-coloring">Professional</label>
+            <div class="privilage notification-txt-position" id="privilage">
+              <%= privilageError %>
+            </div>
+          </div>
+          <div id="display" class="div-positioning txtfield-frm-top" name="experience">
+            <span class="txt-coloring span-frm-top frm-top">Work Experience</span>
+            <input id="password" class="inputfield frm-top" type="number" name="workExperience"/>
+          </div>
+          <div class="div-positioning txtfield-frm-top sex-frm-top">
+            <div>
+              <span class="txt-coloring gender-frm-top">Gender</span>
+              <input id="male" class="male-radio-position" type="radio" value="male" name="gender"/>
+              <label for="male" class="txt-coloring gender-frm-top">Male</label> 
+              <input id="female" class="female-radio-position" type="radio" value="female" name="gender"/>
+              <label for="female" class="txt-coloring female-frm-top gender-frm-top">Female</label>
+              <div class="txtfield-notification gender-notification-position" id="gender-notification">
+                <%= genderError %>
+              </div>
+            </div>
+          </div>
+          <div class="div-positioning txtfield-frm-top">
+            <span class="txt-coloring span-frm-top">Upload Resume</span>
+            <input id="password" class="inputfield additionalFeatures" type="file" name="resume"/>
+            <div class="txtfield-notification notification-txt-position" id="resume-notification">
+              <%= resumeError %>
+            </div>
+          </div>
+          <div>
+            <input class="button submit-position" type="submit" onclick="validateSignUp()" value="Submit"/>
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

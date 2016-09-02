@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <charset="UTF-8"> 
+    <link rel="stylesheet" type="text/css" href="/stylesheets/index.css">
+    <link rel="shortcut icon" href="/images/logo.png">
+    <script type="text/javascript" src="javascripts/index.js"></script>
+    <title>Job Finder</title>
+  </head>
+  <body style="background: url('/images/bg.jpg') no-repeat fixed;background-size: cover;">
+    <div class="logo-container">
+      <a href="/">
+        <img class="home-logo" src="/images/logo.png">
+      </a>
+    </div>
+    <form class="register-container" name="addingJob" action="/jobAdd" method="post">
+      <div class="sign-container sign-login-container">
+        <div class="inner-div-length">
+          <a class="txt-coloring sign-up" href="/login">
+          <label class="pointer">Login</label>
+          </a>
+          <a class="txt-coloring sign-up" href="/admin">
+          <label class="pointer">Admin</label>
+          </a> 
+          <div class="txt-coloring label">
+            <label>Add New Jobs</label>
+          </div>
+          <div class="div-positioning txtfield-frm-top">
+            <span class="txt-coloring span-frm-top">Id</span>
+            <input id="companyId" class="inputfield" type="text" name="id" placeholder="you can choose any id"/>
+            <div class="txtfield-notification notification-txt-position" id="id-notification">
+              <%= idError %>
+            </div>
+          </div>
+          <div class="div-positioning txtfield-frm-top">
+            <span class="txt-coloring span-frm-top">Company</span>
+            <input id="companyName" class="inputfield" type="text" name="company"/>
+            <div class="txtfield-notification notification-txt-position" id="company-notification">
+              <%= companyError %>
+            </div>
+          </div>
+          <div class="div-positioning txtfield-frm-top">
+            <span class="txt-coloring span-frm-top">Post</span>
+            <input id="lastName" class="inputfield" type="text" name="post"/>
+            <div class="txtfield-notification notification-txt-position" id="post-notification">
+              <%= postError %>
+            </div>
+          </div>
+          <div class="div-positioning txtfield-frm-top">
+            <span class="txt-coloring span-frm-top">Bond</span>
+            <input id="email" class="inputfield" type="text" name="bond"/>
+            <div class="txtfield-notification notification-txt-position" id="bond-notification" name="mail">
+              <%= bondError %>
+            </div>
+          </div>
+          <div class="div-positioning txtfield-frm-top">
+            <span class="txt-coloring span-frm-top">Salary</span>
+            <input id="password" class="inputfield" type="text" name="salary"/>
+            <div class="txtfield-notification notification-txt-position" id="salary-notification">
+              <%= salaryError %>
+            </div>
+          </div>
+          <div class="div-positioning txtfield-frm-top">
+            <span class="txt-coloring span-frm-top">Place</span>
+            <input id="confirm-password" class="inputfield" type="text" name="place"/>
+            <div class="txtfield-notification notification-txt-position" id="place-notification">
+              <%= placeError %>
+            </div>
+          </div>
+          <div class="div-positioning txtfield-frm-top">
+            <span class="txt-coloring addressfield-position address-frm-top">Skills Required</span>
+            <textarea id="permanent-address" class="responsibilityfield" name="responsibilities" rows="20" cols="6"></textarea>
+            <div class="txtfield-notification" id="skill-notification">
+            </div>
+          </div>
+          <div class="div-positioning txtfield-frm-top txtfield-frm-left">
+          <%= successMsg %>
+          </div>
+          <div>
+            <input class="button add-position" type="submit" onclick="validateJob(); validateId();" value="Add"/>
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

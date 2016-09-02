@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <charset="UTF-8"> 
+    <link rel="stylesheet" type="text/css" href="./stylesheets/index.css">
+    <link rel="shortcut icon" type="image/png" href="./images/logo.png">
+    <script type="text/javascript" src="./javascripts/index.js"></script>
+    <title>Job Finder</title>
+  </head>
+  <body>
+    <div id="bg-image">
+      <div>
+        <div>
+          <a href="/">
+          <img class="home-logo" src="/images/logo.png">
+          </a>
+        </div>
+      </div>
+      <div class="title">
+        <div class="heading">
+          <label class="jobLabel">Find Your Jobs Here</label>
+        </div>
+        <form name="searchJob" action="/" method="post">
+          <div class="fields">
+            <div  class="field-size">
+              <input type="text" class="whatField" name="field1" placeholder="What?"/>
+              <input type="text" class="whereField" name="field2" placeholder="Where?"/>
+              <input class="findJob findJob-position" type="submit" value="Find Job"/>
+            </div>
+          </div>
+        </form>  
+      </div>
+      <div class="size">
+      <div class="candidates">
+      <div class="freshers">
+      <button class="login-view button-view" type="button" onclick="login()"><label>Login</label></button>
+      </div>
+      <div class="professionals">
+      <button class="signUp-view button-view" type="button" onclick="sign()"><label>Sign Up</label></button>
+      </div>
+      </div>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>
