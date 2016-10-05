@@ -1,5 +1,11 @@
-var myapp = angular.module('jobPortal', ['ngRoute','ngCookies','ui.bootstrap']);  
-
+var myapp = angular.module('jobPortal', ['ngRoute','ngCookies','ui.bootstrap','ngOpbeat']);  
+ myapp.config(function ($opbeatProvider) {
+        $opbeatProvider.config({
+            orgId: '11861de37fd4489583b54dc799911087',
+            appId: '8503982b0d'
+        })
+    });
+           
 myapp.config(function ($routeProvider) {
    $routeProvider
     .when('/',
